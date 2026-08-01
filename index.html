@@ -1,198 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sahana Badiger  | Software Engineer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sahana Badiger | Software Engineer Portfolio</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, Helvetica, sans-serif;
-        }
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
 
-        body{
-            background:#f4f7fa;
-            color:#333;
-            line-height:1.6;
-        }
+body{
+background:#f5f7fa;
+color:#333;
+line-height:1.6;
+}
 
-        header{
-            background:#0b3d91;
-            color:white;
-            text-align:center;
-            padding:60px 20px;
-        }
+header{
+background:#0A66C2;
+color:white;
+padding:20px;
+position:sticky;
+top:0;
+}
 
-        header h1{
-            font-size:40px;
-        }
+header h1{
+text-align:center;
+font-size:32px;
+}
 
-        header p{
-            font-size:20px;
-            margin-top:10px;
-        }
+header p{
+text-align:center;
+margin-top:5px;
+}
 
-        nav{
-            background:#062d6f;
-            text-align:center;
-            padding:15px;
-        }
+nav{
+text-align:center;
+margin-top:15px;
+}
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:15px;
-            font-weight:bold;
-        }
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+}
 
-        nav a:hover{
-            color:#ffd700;
-        }
+nav a:hover{
+text-decoration:underline;
+}
 
-        .container{
-            width:90%;
-            max-width:1000px;
-            margin:auto;
-            padding:40px 0;
-        }
+.hero{
+padding:60px 20px;
+text-align:center;
+background:white;
+}
 
-        section{
-            background:white;
-            margin-bottom:25px;
-            padding:25px;
-            border-radius:10px;
-            box-shadow:0 4px 10px rgba(0,0,0,0.1);
-        }
+.hero img{
+width:200px;
+height:200px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #0A66C2;
+margin-bottom:20px;
+}
 
-        h2{
-            color:#0b3d91;
-            margin-bottom:15px;
-        }
+.hero h2{
+font-size:40px;
+margin-bottom:10px;
+}
 
-        ul{
-            margin-left:20px;
-        }
+.hero p{
+font-size:20px;
+color:#666;
+}
 
-        .btn{
-            display:inline-block;
-            background:#0b3d91;
-            color:white;
-            padding:12px 25px;
-            text-decoration:none;
-            border-radius:5px;
-            margin-top:15px;
-        }
+section{
+max-width:1000px;
+margin:auto;
+padding:50px 20px;
+}
 
-        .btn:hover{
-            background:#062d6f;
-        }
+section h2{
+color:#0A66C2;
+margin-bottom:20px;
+font-size:30px;
+}
 
-        footer{
-            text-align:center;
-            background:#0b3d91;
-            color:white;
-            padding:20px;
-            margin-top:20px;
-        }
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+margin-bottom:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
 
-        @media(max-width:768px){
-            header h1{
-                font-size:30px;
-            }
+.skills span{
+display:inline-block;
+background:#0A66C2;
+color:white;
+padding:10px 18px;
+margin:8px;
+border-radius:20px;
+}
 
-            nav a{
-                display:block;
-                margin:10px 0;
-            }
-        }
-    </style>
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+button{
+background:#0A66C2;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+margin-top:20px;
+}
+
+button:hover{
+background:#084d94;
+}
+</style>
+
 </head>
 
 <body>
 
 <header>
-    <h1>Badiger Sahana</h1>
-    <p>Software Engineer | Python Developer</p>
-</header>
+
+<h1>Sahana Badiger</h1>
+
+<p>Software Engineer | Computer Science Graduate</p>
 
 <nav>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#project">Project</a>
-    <a href="#contact">Contact</a>
+
+<a href="#about">About</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#contact">Contact</a>
+
 </nav>
 
-<div class="container">
+</header>
 
-<section id="about">
-<h2>About Me</h2>
+<section class="hero">
 
-<p>
-Computer Science Engineering graduate with a CGPA of <b>8.0</b> from
-<b>Billuru Gurubasava Mahaswamiji Institute of Technology (VTU)</b>.
-Passionate about Python programming, Artificial Intelligence, and software
-development. Strong problem-solving ability and eager to contribute to innovative software solutions.
-</p>
+<img src="profile.jpg" alt="Sahana Badiger">
+
+<h2>Hello, I'm Sahana Badiger</h2>
+
+<p>Aspiring Software Engineer passionate about Web Development, Python, SQL and Data Analysis.</p>
+
+<button onclick="alert('Thank you for visiting my portfolio!')">
+Welcome
+</button>
 
 </section>
 
-<section id="education">
+<section id="about">
 
-<h2>Education</h2>
+<h2>About Me</h2>
 
-<p><b>B.E. in Computer Science Engineering</b></p>
+<div class="card">
 
-<p>Billuru Gurubasava Mahaswamiji Institute of Technology (VTU)</p>
+<p>
+I'm a Computer Science Engineering graduate with a strong interest in software development and data analytics. I enjoy building responsive websites, solving programming problems, and continuously learning new technologies.
+</p>
 
-<p>Graduation Year : 2026</p>
-
-<p>CGPA : 8.0</p>
+</div>
 
 </section>
 
 <section id="skills">
 
-<h2>Technical Skills</h2>
+<h2>Skills</h2>
 
-<ul>
+<div class="card skills">
 
-<li>Python</li>
+<span>Python</span>
 
-<li>SQL</li>
+<span>Java</span>
 
-<li>HTML</li>
+<span>SQL</span>
 
-<li>CSS</li>
+<span>HTML</span>
 
-<li>Object-Oriented Programming (OOP)</li>
+<span>CSS</span>
 
-<li>Data Structures & Algorithms (Basics)</li>
+<span>JavaScript</span>
 
-<li>Git</li>
+<span>Git</span>
 
-<li>MySQL</li>
+<span>GitHub</span>
 
-</ul>
+<span>Data Analysis</span>
+
+<span>Data Visualization</span>
+
+</div>
 
 </section>
 
-<section id="project">
+<section id="projects">
 
-<h2>Featured Project</h2>
+<h2>Projects</h2>
 
-<h3>YouTube Video Transcript Summarizer</h3>
+<div class="card">
+
+<h3>House Price Prediction</h3>
 
 <p>
-
-Developed an AI-powered application using Python and Natural Language Processing (NLP)
-to extract YouTube transcripts, preprocess text, and generate concise summaries.
-The project improves content understanding by providing quick and accurate summaries.
-
+Built a machine learning model using Python to predict house prices through data preprocessing, feature engineering, and regression algorithms.
 </p>
+
+</div>
+
+<div class="card">
+
+<h3>Personal Portfolio Website</h3>
+
+<p>
+Designed and developed a responsive portfolio website using HTML, CSS, and JavaScript to showcase skills, projects, and contact information.
+</p>
+
+</div>
 
 </section>
 
@@ -200,27 +243,23 @@ The project improves content understanding by providing quick and accurate summa
 
 <h2>Contact</h2>
 
-<p><b>Email:</b> sahanab9980@gmail.com</p>
+<div class="card">
 
-<p><b>Phone:</b> 9980020085</p>
+<p><strong>Name:</strong> Sahana Badiger</p>
 
-<p><b>LinkedIn:</b></p>
+<p><strong>Email:</strong> sahanab9980@gmail.com</p>
 
-<a class="btn"
-href="https://www.linkedin.com/in/sahana-badiger-427061427"
-target="_blank">
+<p><strong>Phone:</strong> +91 9980020085</p>
 
-Visit LinkedIn
-
-</a>
-
-</section>
+<p><strong>Location:</strong> Karnataka, India</p>
 
 </div>
 
+</section>
+
 <footer>
 
-<p>© 2026 Badiger Sahana | Software Engineer Portfolio</p>
+<p>© 2026 Sahana Badiger | All Rights Reserved</p>
 
 </footer>
 
